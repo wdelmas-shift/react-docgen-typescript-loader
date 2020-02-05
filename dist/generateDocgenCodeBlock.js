@@ -22,6 +22,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var typescript_1 = __importDefault(require("typescript"));
 function generateDocgenCodeBlock(options) {
+    console.log(options);
     var sourceFile = typescript_1.default.createSourceFile(options.filename, options.source, typescript_1.default.ScriptTarget.ESNext);
     var relativeFilename = path_1.default
         .relative("./", path_1.default.resolve("./", options.filename))

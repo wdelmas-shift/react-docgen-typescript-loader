@@ -14,6 +14,7 @@ export interface GeneratorOptions {
 export default function generateDocgenCodeBlock(
   options: GeneratorOptions,
 ): string {
+  console.log(options)
   const sourceFile = ts.createSourceFile(
     options.filename,
     options.source,
